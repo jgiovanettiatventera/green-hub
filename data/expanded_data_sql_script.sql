@@ -15,11 +15,11 @@ SET @B20_GHG_FACTOR = 7402.66869565217
 SELECT d.agyID, d.agyAbbrev, d.agyName, d.GGE_E85, d.GGE_GAS, d.GGE_GASE85, d.GGE_OTHER, d.GGE_TOTAL, d.GHG_E85, d.GHG_GAS, d.GHG_GASE85, d.GHG_OTHER, d.GHG_TOTAL,
 d.VEHCNT_E85, d.VEHCNT_GAS, d.VEHCNT_GASE85, d.VEHCNT_OTHER, d.VEHCNT_TOTAL, d.GGE_PER_VEH_E85, d.GGE_PER_VEH_GAS, d.GGE_PER_VEH_GASE85, d.GGE_PER_VEH_OTHER,
 d.GGE_PER_VEH_TOTAL, d.GHG_PER_VEH_E85, d.GHG_PER_VEH_GAS, d.GHG_PER_VEH_GASE85, d.GHG_PER_VEH_OTHER, d.GHG_PER_VEH_TOTAL, d.[AVG Utilization],
-ISNULL((d.VEHCNT_OTHER/fy_2014.total),0) AS veh_reduction_ratio,  ISNULL(((GHG_Diesel * (d.VEHCNT_OTHER/fy_2014.total))/fy_2014.total),0) AS GHG_PER_VEH_DIESEL,
-ISNULL(((GHG_Biodiesel * (d.VEHCNT_OTHER/fy_2014.total))/fy_2014.total),0) AS GHG_PER_VEH_BIODIESEL, 
-ISNULL(((GHG_B20 * (d.VEHCNT_OTHER/fy_2014.total))/fy_2014.total),0) AS GHG_PER_VEH_B20
+ISNULL((d.VEHCNT_OTHER/fy_2014.other_total),0) AS veh_reduction_ratio,  ISNULL(((GHG_Diesel * (d.VEHCNT_OTHER/fy_2014.other_total))/fy_2014.other_total),0) AS GHG_PER_VEH_DIESEL,
+ISNULL(((GHG_Biodiesel * (d.VEHCNT_OTHER/fy_2014.other_total))/fy_2014.other_total),0) AS GHG_PER_VEH_BIODIESEL, 
+ISNULL(((GHG_B20 * (d.VEHCNT_OTHER/fy_2014.other_total))/fy_2014.other_total),0) AS GHG_PER_VEH_B20
 FROM Data d
-LEFT OUTER JOIN ( SELECT v.agyAbbrev, SUM(vehCount) AS total
+LEFT OUTER JOIN ( SELECT v.agyAbbrev, SUM(vehCount) AS other_total
  FROM Vehicles v
  WHERE v.vehType IN('Diesel','Electric')
  GROUP BY v.agyAbbrev
