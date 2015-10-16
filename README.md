@@ -26,3 +26,16 @@ Andrew D'Abbraccio - drewdabb@gmail.com
   2. [Python Notebook](development/GHG_project.ipynb)
   3. [Cross-Agency Tableau](development/Agency_Comparisons.twb)
 
+## Results
+
+1. Data Analysis via SQL
+2. Explored Options within Tableu
+  1. Modification in Tableu
+  2. Long Term User Experience Improvements
+  3. Additional Agency Ratings Dashboard
+    a. Tableau
+    b. Python
+
+## Summary
+
+Event without the Tableau background, our team worked to proved data solutions - from user and technical perspectives - that can be adapted for long term benefits to improve and track federal fleet greenhouse gase emissions.
