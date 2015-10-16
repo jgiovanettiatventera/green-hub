@@ -12,11 +12,11 @@ Andrew D'Abbraccio - drewdabb@gmail.com
 
 1. Data analysis / transformation
   1. [Background](background)
-  2. SQL
+  2. [SQL](development/expanded_data_sql_script.sql)
   3. [Requirements](requirements) (backlog)
 2. UX Enhancements
   1. [Design](design) / Mocks
-3. Further Analysis
+3. Further Analysis (in Python & Excel)
   1. Extended for Other fuel types
   2. Clustering
   3. Box-Plots
