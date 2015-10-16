@@ -1,0 +1,1618 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 9100.15.1013.2200                                -->
+<workbook source-platform='mac' version='9.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Data 6.16.15 (GAS_E85_GHG_rev2)' inline='true' name='excel-direct.42293.521574456019' version='9.1'>
+      <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/projects/gsa/green-hub/data/GAS_E85_GHG_rev2.xlsx' interpretationMode='0' password='' server='' username='' validate='no'>
+        <relation name='&apos;Data 6#16#15$&apos;' table='[&apos;Data 6#16#15$&apos;]' type='table'>
+          <columns gridOrigin='A1:AC48:no:A1:AC48' header='yes' outcome='2'>
+            <column datatype='integer' name='agyID' ordinal='0' />
+            <column datatype='string' name='agyAbbrev' ordinal='1' />
+            <column datatype='string' name='agyName' ordinal='2' />
+            <column datatype='integer' name='GGE_E85' ordinal='3' />
+            <column datatype='integer' name='GGE_GAS' ordinal='4' />
+            <column datatype='integer' name='GGE_GASE85' ordinal='5' />
+            <column datatype='integer' name='GGE_OTHER' ordinal='6' />
+            <column datatype='integer' name='GGE_TOTAL' ordinal='7' />
+            <column datatype='real' name='GHG_E85' ordinal='8' />
+            <column datatype='real' name='GHG_GAS' ordinal='9' />
+            <column datatype='real' name='GHG_GASE85' ordinal='10' />
+            <column datatype='real' name='GHG_OTHER' ordinal='11' />
+            <column datatype='real' name='GHG_TOTAL' ordinal='12' />
+            <column datatype='integer' name='VEHCNT_E85' ordinal='13' />
+            <column datatype='integer' name='VEHCNT_GAS' ordinal='14' />
+            <column datatype='integer' name='VEHCNT_GASE85' ordinal='15' />
+            <column datatype='integer' name='VEHCNT_OTHER' ordinal='16' />
+            <column datatype='integer' name='VEHCNT_TOTAL' ordinal='17' />
+            <column datatype='string' name='GGE_PER_VEH_E85' ordinal='18' />
+            <column datatype='real' name='GGE_PER_VEH_GAS' ordinal='19' />
+            <column datatype='real' name='GGE_PER_VEH_GASE85' ordinal='20' />
+            <column datatype='string' name='GGE_PER_VEH_OTHER' ordinal='21' />
+            <column datatype='real' name='GGE_PER_VEH_TOTAL' ordinal='22' />
+            <column datatype='string' name='GHG_PER_VEH_E85' ordinal='23' />
+            <column datatype='real' name='GHG_PER_VEH_GAS' ordinal='24' />
+            <column datatype='real' name='GHG_PER_VEH_GASE85' ordinal='25' />
+            <column datatype='string' name='GHG_PER_VEH_OTHER' ordinal='26' />
+            <column datatype='real' name='GHG_PER_VEH_TOTAL' ordinal='27' />
+            <column datatype='real' name='AVG Utilization' ordinal='28' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>agyID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[agyID]</local-name>
+            <parent-name>[&apos;Data 6#16#15$&apos;]</parent-name>
+            <remote-alias>agyID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>agyAbbrev</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[agyAbbrev]</local-name>
+            <parent-name>[&apos;Data 6#16#15$&apos;]</parent-name>
+            <remote-alias>agyAbbrev</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>agyName</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[agyName]</local-name>
+            <parent-name>[&apos;Data 6#16#15$&apos;]</parent-name>
+            <remote-alias>agyName</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GGE_E85</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GGE_E85]</local-name>
+            <parent-name>[&apos;Data 6#16#15$&apos;]</parent-name>
+            <remote-alias>GGE_E85</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GGE_GAS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GGE_GAS]</local-name>
+            <parent-name>[&apos;Data 6#16#15$&apos;]</parent-name>
+            <remote-alias>GGE_GAS</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GGE_GASE85</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GGE_GASE85]</local-name>
+            <parent-name>[&apos;Data 6#16#15$&apos;]</parent-name>
+            <remote-alias>GGE_GASE85</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GGE_OTHER</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GGE_OTHER]</local-name>
+            <parent-name>[&apos;Data 6#16#15$&apos;]</parent-name>
+            <remote-alias>GGE_OTHER</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GGE_TOTAL</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GGE_TOTAL]</local-name>
+            <parent-name>[&apos;Data 6#16#15$&apos;]</parent-name>
+            <remote-alias>GGE_TOTAL</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GHG_E85</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[GHG_E85]</local-name>
+            <parent-name>[&apos;Data 6#16#15$&apos;]</parent-name>
+            <remote-alias>GHG_E85</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GHG_GAS</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[GHG_GAS]</local-name>
+            <parent-name>[&apos;Data 6#16#15$&apos;]</parent-name>
+            <remote-alias>GHG_GAS</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GHG_GASE85</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[GHG_GASE85]</local-name>
+            <parent-name>[&apos;Data 6#16#15$&apos;]</parent-name>
+            <remote-alias>GHG_GASE85</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GHG_OTHER</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[GHG_OTHER]</local-name>
+            <parent-name>[&apos;Data 6#16#15$&apos;]</parent-name>
+            <remote-alias>GHG_OTHER</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GHG_TOTAL</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[GHG_TOTAL]</local-name>
+            <parent-name>[&apos;Data 6#16#15$&apos;]</parent-name>
+            <remote-alias>GHG_TOTAL</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VEHCNT_E85</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[VEHCNT_E85]</local-name>
+            <parent-name>[&apos;Data 6#16#15$&apos;]</parent-name>
+            <remote-alias>VEHCNT_E85</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VEHCNT_GAS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[VEHCNT_GAS]</local-name>
+            <parent-name>[&apos;Data 6#16#15$&apos;]</parent-name>
+            <remote-alias>VEHCNT_GAS</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VEHCNT_GASE85</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[VEHCNT_GASE85]</local-name>
+            <parent-name>[&apos;Data 6#16#15$&apos;]</parent-name>
+            <remote-alias>VEHCNT_GASE85</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VEHCNT_OTHER</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[VEHCNT_OTHER]</local-name>
+            <parent-name>[&apos;Data 6#16#15$&apos;]</parent-name>
+            <remote-alias>VEHCNT_OTHER</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VEHCNT_TOTAL</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[VEHCNT_TOTAL]</local-name>
+            <parent-name>[&apos;Data 6#16#15$&apos;]</parent-name>
+            <remote-alias>VEHCNT_TOTAL</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GGE_PER_VEH_E85</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[GGE_PER_VEH_E85]</local-name>
+            <parent-name>[&apos;Data 6#16#15$&apos;]</parent-name>
+            <remote-alias>GGE_PER_VEH_E85</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GGE_PER_VEH_GAS</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[GGE_PER_VEH_GAS]</local-name>
+            <parent-name>[&apos;Data 6#16#15$&apos;]</parent-name>
+            <remote-alias>GGE_PER_VEH_GAS</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GGE_PER_VEH_GASE85</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[GGE_PER_VEH_GASE85]</local-name>
+            <parent-name>[&apos;Data 6#16#15$&apos;]</parent-name>
+            <remote-alias>GGE_PER_VEH_GASE85</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GGE_PER_VEH_OTHER</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[GGE_PER_VEH_OTHER]</local-name>
+            <parent-name>[&apos;Data 6#16#15$&apos;]</parent-name>
+            <remote-alias>GGE_PER_VEH_OTHER</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GGE_PER_VEH_TOTAL</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[GGE_PER_VEH_TOTAL]</local-name>
+            <parent-name>[&apos;Data 6#16#15$&apos;]</parent-name>
+            <remote-alias>GGE_PER_VEH_TOTAL</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GHG_PER_VEH_E85</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[GHG_PER_VEH_E85]</local-name>
+            <parent-name>[&apos;Data 6#16#15$&apos;]</parent-name>
+            <remote-alias>GHG_PER_VEH_E85</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GHG_PER_VEH_GAS</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[GHG_PER_VEH_GAS]</local-name>
+            <parent-name>[&apos;Data 6#16#15$&apos;]</parent-name>
+            <remote-alias>GHG_PER_VEH_GAS</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GHG_PER_VEH_GASE85</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[GHG_PER_VEH_GASE85]</local-name>
+            <parent-name>[&apos;Data 6#16#15$&apos;]</parent-name>
+            <remote-alias>GHG_PER_VEH_GASE85</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GHG_PER_VEH_OTHER</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[GHG_PER_VEH_OTHER]</local-name>
+            <parent-name>[&apos;Data 6#16#15$&apos;]</parent-name>
+            <remote-alias>GHG_PER_VEH_OTHER</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GHG_PER_VEH_TOTAL</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[GHG_PER_VEH_TOTAL]</local-name>
+            <parent-name>[&apos;Data 6#16#15$&apos;]</parent-name>
+            <remote-alias>GHG_PER_VEH_TOTAL</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AVG Utilization</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AVG Utilization]</local-name>
+            <parent-name>[&apos;Data 6#16#15$&apos;]</parent-name>
+            <remote-alias>AVG Utilization</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[&apos;Data 6#16#15$&apos;]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:AC48:no:A1:AC48&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Gge E85' datatype='integer' name='[GGE_E85]' role='measure' type='quantitative' />
+      <column caption='Gge Gase85' datatype='integer' name='[GGE_GASE85]' role='measure' type='quantitative' />
+      <column caption='Gge Gas' datatype='integer' name='[GGE_GAS]' role='measure' type='quantitative' />
+      <column caption='Gge Other' datatype='integer' name='[GGE_OTHER]' role='measure' type='quantitative' />
+      <column caption='Gge Per Veh E85' datatype='string' name='[GGE_PER_VEH_E85]' role='dimension' type='nominal' />
+      <column caption='Gge Per Veh Gase85' datatype='real' name='[GGE_PER_VEH_GASE85]' role='measure' type='quantitative' />
+      <column caption='Gge Per Veh Gas' datatype='real' name='[GGE_PER_VEH_GAS]' role='measure' type='quantitative' />
+      <column caption='Gge Per Veh Other' datatype='string' name='[GGE_PER_VEH_OTHER]' role='dimension' type='nominal' />
+      <column caption='Gge Per Veh Total' datatype='real' name='[GGE_PER_VEH_TOTAL]' role='measure' type='quantitative' />
+      <column caption='Gge Total' datatype='integer' name='[GGE_TOTAL]' role='measure' type='quantitative' />
+      <column caption='Ghg E85' datatype='real' name='[GHG_E85]' role='measure' type='quantitative' />
+      <column caption='Ghg Gase85' datatype='real' name='[GHG_GASE85]' role='measure' type='quantitative' />
+      <column caption='Ghg Gas' datatype='real' name='[GHG_GAS]' role='measure' type='quantitative' />
+      <column caption='Ghg Other' datatype='real' name='[GHG_OTHER]' role='measure' type='quantitative' />
+      <column caption='Ghg Per Veh E85' datatype='string' name='[GHG_PER_VEH_E85]' role='dimension' type='nominal' />
+      <column caption='Ghg Per Veh Gase85' datatype='real' name='[GHG_PER_VEH_GASE85]' role='measure' type='quantitative' />
+      <column caption='Ghg Per Veh Gas' datatype='real' name='[GHG_PER_VEH_GAS]' role='measure' type='quantitative' />
+      <column caption='Ghg Per Veh Other' datatype='string' name='[GHG_PER_VEH_OTHER]' role='dimension' type='nominal' />
+      <column caption='Ghg Per Veh Total' datatype='real' name='[GHG_PER_VEH_TOTAL]' role='measure' type='quantitative' />
+      <column caption='Ghg Total' datatype='real' name='[GHG_TOTAL]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Ghg Per Veh Gas (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='3' formula='[GHG_PER_VEH_GAS]' peg='0' size='1563' />
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Vehcnt E85' datatype='integer' name='[VEHCNT_E85]' role='measure' type='quantitative' />
+      <column caption='Vehcnt Gase85' datatype='integer' name='[VEHCNT_GASE85]' role='measure' type='quantitative' />
+      <column caption='Vehcnt Gas' datatype='integer' name='[VEHCNT_GAS]' role='measure' type='quantitative' />
+      <column caption='Vehcnt Other' datatype='integer' name='[VEHCNT_OTHER]' role='measure' type='quantitative' />
+      <column caption='Vehcnt Total' datatype='integer' name='[VEHCNT_TOTAL]' role='measure' type='quantitative' />
+      <column caption='Agy Abbrev' datatype='string' name='[agyAbbrev]' role='dimension' type='nominal' />
+      <column caption='Agy ID' datatype='integer' name='[agyID]' role='dimension' type='ordinal' />
+      <column caption='Agy Name' datatype='string' name='[agyName]' role='dimension' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.4' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='FAST!2014 Vehicles (GHG hackathon_fy14_fast_data_extract_081315)' inline='true' name='excel-direct.42293.519769016202' version='9.1'>
+      <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/projects/gsa/green-hub/data/GHG hackathon_fy14_fast_data_extract_081315.xlsx' interpretationMode='0' password='' server='' username='' validate='no'>
+        <relation name='&apos;FAST_2014 Vehicles$&apos;' table='[&apos;FAST_2014 Vehicles$&apos;]' type='table'>
+          <columns gridOrigin='A1:M153:no:A1:M153' header='yes' outcome='2'>
+            <column datatype='integer' name='dataYear' ordinal='0' />
+            <column datatype='string' name='agyParentName' ordinal='1' />
+            <column datatype='string' name='agyType' ordinal='2' />
+            <column datatype='string' name='agyAbbrev' ordinal='3' />
+            <column datatype='string' name='agyName' ordinal='4' />
+            <column datatype='string' name='vehType' ordinal='5' />
+            <column datatype='integer' name='vehCount' ordinal='6' />
+            <column datatype='integer' name='GGE_E85' ordinal='7' />
+            <column datatype='real' name='GGE_Gas' ordinal='8' />
+            <column datatype='integer' name='GGE_Diesel' ordinal='9' />
+            <column datatype='integer' name='GGE_Biodiesel' ordinal='10' />
+            <column datatype='integer' name='GGE_B20' ordinal='11' />
+            <column datatype='integer' name='GGE_Electricity' ordinal='12' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>dataYear</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[dataYear]</local-name>
+            <parent-name>[&apos;FAST_2014 Vehicles$&apos;]</parent-name>
+            <remote-alias>dataYear</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>agyParentName</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[agyParentName]</local-name>
+            <parent-name>[&apos;FAST_2014 Vehicles$&apos;]</parent-name>
+            <remote-alias>agyParentName</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>agyType</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[agyType]</local-name>
+            <parent-name>[&apos;FAST_2014 Vehicles$&apos;]</parent-name>
+            <remote-alias>agyType</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>agyAbbrev</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[agyAbbrev]</local-name>
+            <parent-name>[&apos;FAST_2014 Vehicles$&apos;]</parent-name>
+            <remote-alias>agyAbbrev</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>agyName</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[agyName]</local-name>
+            <parent-name>[&apos;FAST_2014 Vehicles$&apos;]</parent-name>
+            <remote-alias>agyName</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>vehType</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[vehType]</local-name>
+            <parent-name>[&apos;FAST_2014 Vehicles$&apos;]</parent-name>
+            <remote-alias>vehType</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>vehCount</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[vehCount]</local-name>
+            <parent-name>[&apos;FAST_2014 Vehicles$&apos;]</parent-name>
+            <remote-alias>vehCount</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GGE_E85</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GGE_E85]</local-name>
+            <parent-name>[&apos;FAST_2014 Vehicles$&apos;]</parent-name>
+            <remote-alias>GGE_E85</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GGE_Gas</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[GGE_Gas]</local-name>
+            <parent-name>[&apos;FAST_2014 Vehicles$&apos;]</parent-name>
+            <remote-alias>GGE_Gas</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GGE_Diesel</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GGE_Diesel]</local-name>
+            <parent-name>[&apos;FAST_2014 Vehicles$&apos;]</parent-name>
+            <remote-alias>GGE_Diesel</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GGE_Biodiesel</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GGE_Biodiesel]</local-name>
+            <parent-name>[&apos;FAST_2014 Vehicles$&apos;]</parent-name>
+            <remote-alias>GGE_Biodiesel</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GGE_B20</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GGE_B20]</local-name>
+            <parent-name>[&apos;FAST_2014 Vehicles$&apos;]</parent-name>
+            <remote-alias>GGE_B20</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GGE_Electricity</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GGE_Electricity]</local-name>
+            <parent-name>[&apos;FAST_2014 Vehicles$&apos;]</parent-name>
+            <remote-alias>GGE_Electricity</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[&apos;FAST_2014 Vehicles$&apos;]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:M153:no:A1:M153&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Gge B20' datatype='integer' name='[GGE_B20]' role='measure' type='quantitative' />
+      <column caption='GGE Biodiesel' datatype='integer' name='[GGE_Biodiesel]' role='measure' type='quantitative' />
+      <column caption='GGE Diesel' datatype='integer' name='[GGE_Diesel]' role='measure' type='quantitative' />
+      <column caption='Gge E85' datatype='integer' name='[GGE_E85]' role='measure' type='quantitative' />
+      <column caption='GGE Electricity' datatype='integer' name='[GGE_Electricity]' role='measure' type='quantitative' />
+      <column caption='GGE Gas' datatype='real' name='[GGE_Gas]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Agy Abbrev' datatype='string' name='[agyAbbrev]' role='dimension' type='nominal' />
+      <column caption='Agy Name' datatype='string' name='[agyName]' role='dimension' type='nominal' />
+      <column caption='Agy Parent Name' datatype='string' name='[agyParentName]' role='dimension' type='nominal' />
+      <column caption='Agy Type' datatype='string' name='[agyType]' role='dimension' type='nominal' />
+      <column caption='Data Year' datatype='integer' name='[dataYear]' role='dimension' type='quantitative' />
+      <column caption='Veh Count' datatype='integer' name='[vehCount]' role='measure' type='quantitative' />
+      <column caption='Veh Type' datatype='string' name='[vehType]' role='dimension' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.4' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='fuel!types (supplementary_data)' inline='true' name='excel-direct.42293.538171053238' version='9.1'>
+      <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/projects/gsa/green-hub/data/supplementary_data.xlsx' interpretationMode='0' password='' server='' username='' validate='no'>
+        <relation name='fuel_types$' table='[fuel_types$]' type='table'>
+          <columns gridOrigin='A1:A3:no:A1:A3' header='no' outcome='2'>
+            <column datatype='string' name='F1' ordinal='0' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[fuel_types$]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[fuel_types$]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>1</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:A3:no:A1:A3&quot;</attribute>
+              <attribute datatype='boolean' name='header'>false</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Fuel Type' datatype='string' name='[F1]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.4' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <datasource-relationships>
+    <datasource-dependencies datasource='excel-direct.42293.519769016202'>
+      <column caption='Agy Abbrev' datatype='string' name='[agyAbbrev]' role='dimension' type='nominal' />
+      <column caption='Agy Name' datatype='string' name='[agyName]' role='dimension' type='nominal' />
+      <column-instance column='[agyAbbrev]' derivation='None' name='[none:agyAbbrev:nk]' pivot='key' type='nominal' />
+      <column-instance column='[agyName]' derivation='None' name='[none:agyName:nk]' pivot='key' type='nominal' />
+    </datasource-dependencies>
+    <datasource-dependencies datasource='excel-direct.42293.521574456019'>
+      <column caption='Agy Abbrev' datatype='string' name='[agyAbbrev]' role='dimension' type='nominal' />
+      <column caption='Agy Name' datatype='string' name='[agyName]' role='dimension' type='nominal' />
+      <column-instance column='[agyAbbrev]' derivation='None' name='[none:agyAbbrev:nk]' pivot='key' type='nominal' />
+      <column-instance column='[agyName]' derivation='None' name='[none:agyName:nk]' pivot='key' type='nominal' />
+    </datasource-dependencies>
+    <datasource-relationship source='excel-direct.42293.521574456019' target='excel-direct.42293.519769016202'>
+      <column-mapping>
+        <map key='[excel-direct.42293.521574456019].[none:agyAbbrev:nk]' value='[excel-direct.42293.519769016202].[none:agyAbbrev:nk]' />
+        <map key='[excel-direct.42293.521574456019].[none:agyName:nk]' value='[excel-direct.42293.519769016202].[none:agyName:nk]' />
+      </column-mapping>
+    </datasource-relationship>
+    <datasource-relationship source='excel-direct.42293.521574456019' target='excel-direct.42293.538171053238'>
+      <column-mapping />
+    </datasource-relationship>
+  </datasource-relationships>
+  <worksheets>
+    <worksheet name='GHG per Gas Vehicle Across Agencies'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data 6.16.15 (GAS_E85_GHG_rev2)' name='excel-direct.42293.521574456019' />
+          </datasources>
+          <datasource-dependencies datasource='excel-direct.42293.521574456019'>
+            <column caption='Ghg Per Veh Gas' datatype='real' name='[GHG_PER_VEH_GAS]' role='measure' type='quantitative' />
+            <column caption='Agy Abbrev' datatype='string' name='[agyAbbrev]' role='dimension' type='nominal' />
+            <column-instance column='[agyAbbrev]' derivation='None' name='[none:agyAbbrev:nk]' pivot='key' type='nominal' />
+            <column-instance column='[GHG_PER_VEH_GAS]' derivation='Sum' name='[sum:GHG_PER_VEH_GAS:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[excel-direct.42293.521574456019].[none:agyAbbrev:nk]' />
+            </encodings>
+            <reference-line axis-column='[excel-direct.42293.521574456019].[sum:GHG_PER_VEH_GAS:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[excel-direct.42293.521574456019].[sum:GHG_PER_VEH_GAS:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[excel-direct.42293.521574456019].[sum:GHG_PER_VEH_GAS:qk]</rows>
+        <cols />
+      </table>
+    </worksheet>
+    <worksheet name='Per Vehicle GHG Across Agencies'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data 6.16.15 (GAS_E85_GHG_rev2)' name='excel-direct.42293.521574456019' />
+          </datasources>
+          <datasource-dependencies datasource='excel-direct.42293.521574456019'>
+            <column caption='Ghg Per Veh Gase85' datatype='real' name='[GHG_PER_VEH_GASE85]' role='measure' type='quantitative' />
+            <column caption='Ghg Per Veh Gas' datatype='real' name='[GHG_PER_VEH_GAS]' role='measure' type='quantitative' />
+            <column caption='Ghg Per Veh Total' datatype='real' name='[GHG_PER_VEH_TOTAL]' role='measure' type='quantitative' />
+            <column caption='Agy Abbrev' datatype='string' name='[agyAbbrev]' role='dimension' type='nominal' />
+            <column-instance column='[agyAbbrev]' derivation='None' name='[none:agyAbbrev:nk]' pivot='key' type='nominal' />
+            <column-instance column='[GHG_PER_VEH_GAS]' derivation='Sum' name='[sum:GHG_PER_VEH_GAS:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[GHG_PER_VEH_GASE85]' derivation='Sum' name='[sum:GHG_PER_VEH_GASE85:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[GHG_PER_VEH_TOTAL]' derivation='Sum' name='[sum:GHG_PER_VEH_TOTAL:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[excel-direct.42293.521574456019].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[excel-direct.42293.521574456019].[sum:GHG_PER_VEH_GAS:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[excel-direct.42293.521574456019].[sum:GHG_PER_VEH_GASE85:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[excel-direct.42293.521574456019].[sum:GHG_PER_VEH_TOTAL:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[excel-direct.42293.521574456019].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[excel-direct.42293.521574456019].[none:agyAbbrev:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[excel-direct.42293.521574456019].[Multiple Values]</rows>
+        <cols>[excel-direct.42293.521574456019].[:Measure Names]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Proportion of Total GHG by Agency'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;SHEET NAME&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data 6.16.15 (GAS_E85_GHG_rev2)' name='excel-direct.42293.521574456019' />
+          </datasources>
+          <datasource-dependencies datasource='excel-direct.42293.521574456019'>
+            <column caption='Ghg Total' datatype='real' name='[GHG_TOTAL]' role='measure' type='quantitative' />
+            <column caption='Agy Abbrev' datatype='string' name='[agyAbbrev]' role='dimension' type='nominal' />
+            <column-instance column='[agyAbbrev]' derivation='None' name='[none:agyAbbrev:nk]' pivot='key' type='nominal' />
+            <column-instance column='[GHG_TOTAL]' derivation='Sum' name='[sum:GHG_TOTAL:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' value='581' />
+            <format attr='width' value='612' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[excel-direct.42293.521574456019].[none:agyAbbrev:nk]' />
+              <wedge-size column='[excel-direct.42293.521574456019].[sum:GHG_TOTAL:qk]' />
+              <size column='[excel-direct.42293.521574456019].[sum:GHG_TOTAL:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Cross-Agency'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='50000' id='6' param='horz' type='layout-flow' w='100000' x='0' y='50000'>
+            <zone h='50000' id='4' type='layout-basic' w='99600' x='0' y='50000'>
+              <zone h='50000' id='9' name='Per Vehicle GHG Across Agencies' show-title='true' w='49800' x='0' y='50000' />
+              <zone h='50000' id='1' name='GHG per Gas Vehicle Across Agencies' show-title='true' w='49800' x='49800' y='50000' />
+            </zone>
+          </zone>
+          <zone h='50000' id='11' param='vert' type='layout-flow' w='100000' x='0' y='0'>
+            <zone h='50000' id='12' param='horz' type='layout-flow' w='100000' x='0' y='0'>
+              <zone h='50000' id='13' param='vert' type='layout-flow' w='61900' x='0' y='0'>
+                <zone fixed-size='868' h='45000' id='3' is-fixed='true' name='Proportion of Total GHG by Agency' show-title='true' w='61900' x='0' y='0'>
+                  <layout-cache type-h='fixed' type-w='cell' />
+                </zone>
+                <zone h='5000' id='8' name='Proportion of Total GHG by Agency' pane-specification-id='0' param='[excel-direct.42293.521574456019].[sum:GHG_TOTAL:qk]' type='size' w='61900' x='0' y='45000' />
+              </zone>
+              <zone fixed-size='369' h='50000' id='7' is-fixed='true' name='Proportion of Total GHG by Agency' pane-specification-id='0' param='[excel-direct.42293.521574456019].[none:agyAbbrev:nk]' type='color' w='37700' x='61900' y='0' />
+            </zone>
+          </zone>
+        </zone>
+      </zones>
+    </dashboard>
+  </dashboards>
+  <windows>
+    <window class='schema' source-height='-1' />
+    <window auto-hidden='0' class='dashboard' maximized='1' name='Cross-Agency'>
+      <zones>
+        <zone name='Per Vehicle GHG Across Agencies'>
+          <viewpoint>
+            <zoom type='entire-view' />
+          </viewpoint>
+        </zone>
+        <zone name='GHG per Gas Vehicle Across Agencies'>
+          <viewpoint>
+            <zoom type='entire-view' />
+          </viewpoint>
+        </zone>
+        <zone name='Proportion of Total GHG by Agency'>
+          <viewpoint>
+            <zoom type='fit-width' />
+            <floating-toolbar-visibility value='1' />
+          </viewpoint>
+          <highlight field='[excel-direct.42293.521574456019].[none:agyAbbrev:nk]'>
+            <bucket-selection />
+          </highlight>
+        </zone>
+        <zone name='Proportion of Total GHG by Agency' pane-specification-id='0' param='[excel-direct.42293.521574456019].[sum:GHG_TOTAL:qk]' type='size' />
+        <zone name='Proportion of Total GHG by Agency' pane-specification-id='0' param='[excel-direct.42293.521574456019].[none:agyAbbrev:nk]' type='color' />
+      </zones>
+    </window>
+    <window auto-hidden='0' class='worksheet' maximized='0' name='Proportion of Total GHG by Agency'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[excel-direct.42293.521574456019].[none:agyAbbrev:nk]' type='color' />
+            <card pane-specification-id='0' param='[excel-direct.42293.521574456019].[sum:GHG_TOTAL:qk]' type='size' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <highlight>
+        <color-one-way>
+          <field>[excel-direct.42293.521574456019].[none:agyAbbrev:nk]</field>
+        </color-one-way>
+      </highlight>
+      <viewpoint />
+      <visual />
+    </window>
+    <window auto-hidden='0' class='worksheet' maximized='0' name='Per Vehicle GHG Across Agencies'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <highlight>
+        <color-one-way>
+          <field>[excel-direct.42293.521574456019].[none:agyAbbrev:nk]</field>
+        </color-one-way>
+      </highlight>
+      <viewpoint />
+      <visual />
+    </window>
+    <window auto-hidden='0' class='worksheet' maximized='0' name='GHG per Gas Vehicle Across Agencies'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <highlight>
+        <color-one-way>
+          <field>[excel-direct.42293.521574456019].[none:Calculation_3269050388432601089:qk]</field>
+          <field>[excel-direct.42293.521574456019].[none:Calculation_3269050388432683010:qk]</field>
+          <field>[excel-direct.42293.521574456019].[none:agyAbbrev:nk]</field>
+          <field>[excel-direct.42293.521574456019].[none:agyID:ok]</field>
+          <field>[excel-direct.42293.538171053238].[none:F1:nk]</field>
+        </color-one-way>
+      </highlight>
+      <viewpoint />
+      <visual />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Cross-Agency' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Proportion of Total GHG by Agency' width='192'>
+      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
+      N5p/jIwAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Per Vehicle GHG Across Agencies' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='GHG per Gas Vehicle Across Agencies' width='109'>
+      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
+      ZeHsFv5PnExgF3ydgmsAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
