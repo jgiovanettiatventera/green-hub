@@ -6,17 +6,16 @@ Extend/improve the existing dashboard including for alternate fuel source beyond
 ## Team
 Phil Armour - phil.armour@gmail.com  
 Andrew D'Abbraccio - drewdabb@gmail.com  
-Ian Cassidy - ianlcassidy@gmail.com
 
 
 ## Approach
 
 1. Data analysis / transformation
-  1. Background
+  1. [Background](background)
   2. SQL
-  3. Requirements (backlog)
+  3. [Requirements](requirements) (backlog)
 2. UX Enhancements
-  1. Design / Mocks
+  1. [Design](design) / Mocks
 3. Further Analysis
   1. Extended for Other fuel types
   2. Clustering
@@ -24,5 +23,6 @@ Ian Cassidy - ianlcassidy@gmail.com
   4. Cross-Agency Comparisons
 4. Implementation
   1. Enhancements to Existing Tableau
-  2. Python Notebook
+  2. [Python Notebook](development/GHG_project.ipynb)
+  3. [Cross-Agency Tableau](development/Agency_Comparisons.twb)
 
