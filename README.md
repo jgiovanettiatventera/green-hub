@@ -4,9 +4,13 @@
 Extend/improve the existing dashboard including for alternate fuel source beyond just E85.  Also Find other ways to utilize and visualize the data around each agency's fleet's GHG emissions.
 
 ## Team
-Phil Armour - phil.armour@gmail.com  
+Jennifer Goodwin <jgoodwin@ventera.com  
+Dina Li - dinali@ers.usda.gov  
+Carl Dor - cdor@ventera.com  
+Justin Giovanetti - jgiovanetti@ventera.com  
 Andrew D'Abbraccio - drewdabb@gmail.com  
-
+Phil Armour - phillip.armour@itgfirm.com  
+Ian Cassidy - ian.cassidy@itgfirm.com  
 
 ## Approach
 
