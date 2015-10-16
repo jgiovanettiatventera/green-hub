@@ -6,6 +6,7 @@ Extend/improve the existing dashboard including for alternate fuel source beyond
 ## Team
 Phil Armour - phil.armour@gmail.com  
 Andrew D'Abbraccio - drewdabb@gmail.com  
+Ian Cassidy - ianlcassidy@gmail.com
 
 
 ## Approach
